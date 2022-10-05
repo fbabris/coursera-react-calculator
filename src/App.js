@@ -3,6 +3,7 @@ import {
   useRef
 } from "react"; 
 import "./App.css";
+//random comment
 
 function App() { 
   const inputRef = useRef(null); 
@@ -13,25 +14,21 @@ function App() {
   function plus(e) { 
     e.preventDefault(); 
     setResult((result) => result + Number(inputRef.current.value));
-    resetInput(e); 
   }; 
  
   function minus(e) { 
   	e.preventDefault();
-    setResult((result)=> result - Number(inputRef.current.value));
-    resetInput(e); 
+    setResult((result)=> result - Number(inputRef.current.value)); 
   };
  
   function times(e) { 
     e.preventDefault();
     setResult((result)=> result * Number(inputRef.current.value));
-    resetInput(e); 
   }; 
  
   function divide(e) { 
     e.preventDefault();
-    setResult((result)=> result / Number(inputRef.current.value));
-    resetInput(e);  
+    setResult((result)=> result / Number(inputRef.current.value));  
   };
  
   function resetInput(e) { 
@@ -76,5 +73,5 @@ function App() {
     </div> 
   ); 
 } 
- 
+
 export default App;
